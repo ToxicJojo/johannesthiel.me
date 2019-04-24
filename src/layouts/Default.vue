@@ -1,16 +1,11 @@
-<template>
-  <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metaData.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about">About</g-link>
-      </nav>
-    </header>
-    <slot/>
-  </div>
+<template lang='pug'>
+  div.layout
+    header.header
+      strong
+        g-link(to="/") {{ $static.metaData.siteName }}
+      nav.nav
+        g-link.nav__link(to="/") Home
+    slot
 </template>
 
 <static-query>
