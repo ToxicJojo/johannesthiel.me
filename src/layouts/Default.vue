@@ -1,12 +1,23 @@
 <template lang='pug'>
-  div.layout
-    header.header
-      strong
-        g-link(to="/") {{ $static.metaData.siteName }}
-      nav.nav
-        g-link.nav__link(to="/") Home
-    slot
+  .app
+    Header
+    main
+      slot
+    Footer
 </template>
+
+<script>
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
+
+export default {
+  name: 'Layout',
+  components: {
+    Header,
+    Footer,
+  },
+}
+</script>
 
 <static-query>
 query {
