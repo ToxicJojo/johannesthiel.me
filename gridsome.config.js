@@ -11,4 +11,11 @@ module.exports = {
       use: 'gridsome-plugin-pug',
     },
   ],
+  css: {
+    loaderOptions: {
+      scss: {
+        data: '@import "@/scss/_mixins.scss"; @import "@/scss/_variables.scss";',
+      },
+    },
+  },
 }
