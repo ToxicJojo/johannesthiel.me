@@ -25,23 +25,28 @@ nav {
     padding: 0;
 
     li {
-      padding: 30px;
+      display: flex;
       a {
+        padding: 30px;
         text-decoration: none;
+        font-weight: bold;
+        &.active {
+          color: $primary-color;
+        }
       }
     }
   }
 }
 
 @include light-theme {
-  nav {
-    background-color: $body-background-light;
+  a {
+    color: $text-color-light;
   }
 }
 
 @include dark-theme {
-  nav {
-    background-color: $body-background-dark;
+  a {
+    color: $text-color-dark;
   }
 }
 
