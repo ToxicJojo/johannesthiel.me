@@ -1,14 +1,18 @@
+$font-size: 20px;
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
+  font-size: $font-size;
   line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', serif;
-  margin: .75em 0px;
+  margin-top: (3 * $font-size);
+  margin-bottom: 0;
 }
 
 p {
-  margin: 1.5em 0px;
+  margin-top: (1.5 * $font-size);
+  margin-bottom: 0;
 }
