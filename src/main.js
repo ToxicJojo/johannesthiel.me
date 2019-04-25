@@ -16,4 +16,7 @@ export default function (Vue, { router, head, isClient }) {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro',
   })
+
+  // Add the light theme as a default
+  head.bodyAttrs = { class: 'light' }
 }
