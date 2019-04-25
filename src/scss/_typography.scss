@@ -1,14 +1,5 @@
 $font-size: 20px;
 
-$body-backgrond-light: #fff;
-$body-backgrond-dark: #333;
-
-$text-color-light: #333;
-$text-color-dark: #ddd;
-
-$heading-color-light: #222;
-$heading-color-dark: #eee;
-
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: $font-size;
@@ -16,7 +7,7 @@ body {
 
   // Styles for the light theme
   &.light {
-    background-color: $body-backgrond-light;
+    background-color: $body-background-light;
     color: $text-color-light;
 
     h1, h2, h3, h4, h5, h6 {
@@ -26,7 +17,7 @@ body {
 
   // Styles for the dark theme
   &.dark {
-    background-color: $body-backgrond-dark;
+    background-color: $body-background-dark;
     color: $text-color-dark;
 
     h1, h2, h3, h4, h5, h6 {
