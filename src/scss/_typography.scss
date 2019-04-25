@@ -1,0 +1,47 @@
+$font-size: 20px;
+
+$body-backgrond-light: #fff;
+$body-backgrond-dark: #333;
+
+$text-color-light: #333;
+$text-color-dark: #ddd;
+
+$heading-color-light: #222;
+$heading-color-dark: #eee;
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: $font-size;
+  line-height: 1.5;
+
+  // Styles for the light theme
+  &.light {
+    background-color: $body-backgrond-light;
+    color: $text-color-light;
+
+    h1, h2, h3, h4, h5, h6 {
+      color: $heading-color-light;
+    }
+  }
+
+  // Styles for the dark theme
+  &.dark {
+    background-color: $body-backgrond-dark;
+    color: $text-color-dark;
+
+    h1, h2, h3, h4, h5, h6 {
+      color: $heading-color-dark;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  margin-top: (3 * $font-size);
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: (1.5 * $font-size);
+  margin-bottom: 0;
+}
