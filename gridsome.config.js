@@ -18,6 +18,14 @@ module.exports = {
         route: 'blog/:slug',
       },
     },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/projects/**/*.md',
+        typeName: 'Project',
+        route: 'projects/:slug',
+      },
+    },
   ],
   css: {
     loaderOptions: {
