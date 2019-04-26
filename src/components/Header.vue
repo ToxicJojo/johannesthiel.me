@@ -7,10 +7,58 @@
         g-link(to='/projects') Projects
       li
         g-link(to='/blog') Blog
+      li
+        LightModeIcon(class='theme-icon' v-if="darkThemeActive" @click='toggleDarkTheme')
+        DarkModeIcon(class='theme-icon' v-if="!darkThemeActive" @click='toggleDarkTheme')
 
 </template>
 
+<script>
+import DarkModeIcon from '@/assets/moon-solid.svg'
+import LightModeIcon from '@/assets/sun-solid.svg'
+
+export default {
+  name: 'Header',
+  data () {
+    return {
+      darkThemeActive: false,
+    }
+  },
+  mounted () {
+    const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+
+    if (isDarkMode) {
+      toggleDarkTheme()
+    }
+  },
+  methods: {
+    toggleDarkTheme () {
+      this.darkThemeActive = !this.darkThemeActive
+
+      if (this.darkThemeActive) {
+        document.querySelector('body').classList.toggle('dark', true)
+        document.querySelector('body').classList.toggle('light', false)
+      } else {
+        document.querySelector('body').classList.toggle('dark', false)
+        document.querySelector('body').classList.toggle('light', true)
+      }
+    },
+  },
+  components: {
+    DarkModeIcon,
+    LightModeIcon,
+  },
+}
+</script>
+
+
 <style lang="scss" scoped>
+
+.theme-icon {
+  width: 32px;
+  height: 32px;
+  padding: 30px;
+}
 
 nav {
   display: flex;
@@ -26,6 +74,7 @@ nav {
 
     li {
       display: flex;
+      align-items: center;
       a {
         padding: 30px;
         text-decoration: none;
