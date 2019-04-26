@@ -48,17 +48,29 @@ Velit est iussit, [dote et](http://www.aevum.org/fregit.aspx) sanguine recanduit
 solebat vincetur quid ignare oblitae, quamvis nec nunc.
 
 ```javascript
-if (dllUrl < read_hibernate_pci) {
-    abendGui.web_uat_minisite += tooltipDbmsCell + monochrome - restore(
-            defragment, pinterestPrinter);
-} else {
-    hyper = ascii_integer_file.sector_gis_ole(63, hardBusLeaderboard, 2) +
-            excel_power;
+import DefaultLayout from '@/layouts/Default.vue'
+import style from '@/scss/style.scss'
+
+export default function (Vue, { router, head, isClient }) {
+  // Set default layout as a global component
+  Vue.component('Layout', DefaultLayout)
+
+  // Add heading font
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css?family=Merriweather',
+  })
+
+  // Add text font
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro',
+  })
+
+  // Add the light theme as a default
+  head.bodyAttrs = { class: 'light' }
 }
-basicCardAvatar -= constantWpa;
-if (link) {
-    index = dragPiracy(localhostCopyright, menuUndo / cdn_wireless_party);
-}
+
 ```
 
 ## Vivit sua stipite vere haec legendo mortale
