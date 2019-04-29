@@ -4,6 +4,8 @@ image: https://johannesthiel.me/img/issueVisualizer.png
 description: Show Github Issues in a visual way. Allows filtering, coloring and many more customizations.
 tech: [vue, bulma]
 color: 7957d5
+github: https://github.com/ToxicJojo/github-issue-visualizer
+website: https://github-issue-vizualiser.netlify.com/
 ---
 
 ## Vivit sua stipite vere haec legendo mortale
