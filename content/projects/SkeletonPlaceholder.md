@@ -1,9 +1,9 @@
 ---
-title: Github Issue Visualizer
-image: https://johannesthiel.me/img/issueVisualizer.png
-description: Show Github Issues in a visual way. Allows filtering, coloring and many more customizations.
+title: Skeleton Placeholder
+image: https://johannesthiel.me/img/skeletonPlaceholder.png
+description: A small CSS library to build skeleton placeholders. Provides different customization such as color, size or animations.
 tech: [vue, bulma]
-color: 7957d5
+color: 42b983
 ---
 
 ## Vivit sua stipite vere haec legendo mortale

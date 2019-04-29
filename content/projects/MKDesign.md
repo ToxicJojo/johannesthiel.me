@@ -1,9 +1,9 @@
 ---
-title: Github Issue Visualizer
-image: https://johannesthiel.me/img/issueVisualizer.png
-description: Show Github Issues in a visual way. Allows filtering, coloring and many more customizations.
+title: MkDesign
+image: https://johannesthiel.me/img/mkdesign.png
+description: A web app for mechanical keyboard enthusiats that allows you to design your own keyboard. Layouts, Colors, Fonts and more can be customized. Keyboards can be saved and shared with other people.
 tech: [vue, bulma]
-color: 7957d5
+color: ffa000
 ---
 
 ## Vivit sua stipite vere haec legendo mortale
