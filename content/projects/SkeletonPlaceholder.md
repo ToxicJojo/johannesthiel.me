@@ -3,7 +3,7 @@ title: Skeleton Placeholder
 image: https://johannesthiel.me/img/skeletonPlaceholder.png
 description: A small CSS library to build skeleton placeholders. Provides different customization such as color, size or animations.
 tech: [vue, bulma]
-color: 42b983
+color: F6511D
 github: https://github.com/ToxicJojo/SkeletonPlaceholder
 website: https://toxicjojo.github.io/SkeletonPlaceholder/#/
 ---

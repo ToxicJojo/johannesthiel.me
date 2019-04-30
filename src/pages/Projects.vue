@@ -14,10 +14,13 @@ query Project {
     edges {
       node {
         title 
+        content
         image
         color
         description
         path
+        github
+        website
       }
     }
   }
