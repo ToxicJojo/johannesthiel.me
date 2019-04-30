@@ -1,7 +1,7 @@
 <template lang='pug'>
   //.project-card
-  g-link(:to='project.path').project-card
-    h2(:style='{color: "#" + project.color}') {{ project.title }}
+  g-link(:to='project.path' :style='{backgroundColor: "#" + project.color}').project-card
+    h2 {{ project.title }}
     //g-image(:src='project.image')
     p {{ project.description }}
     //g-link(:to='project.path') See more
@@ -27,11 +27,18 @@ export default {
   width: 85%;
   transition: transform .25s;
   cursor: pointer;
-  color: inherit;
+  color: $heading-color-dark;
+
 
   &:hover {
     transform: scale(1.05);
   }
+
+  h2 {
+    margin: 0;
+    color: $heading-color-dark;
+  }
+
 }
 
 @include dark-theme {
@@ -41,9 +48,7 @@ export default {
 }
 
 
-h2 {
-  margin: 0;
-}
+
 
 img {
   position: relative;

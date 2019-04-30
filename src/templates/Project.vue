@@ -4,7 +4,8 @@
       //.header(:style='{backgroundColor: "#" + project.color}')
       .header(:style='{backgroundImage: backgroundGradient}')
         h1 {{ project.title }} 
-        g-image(:src='project.image')
+        //g-image(:src='project.image')
+        g-image(src='@/assets/gwent-cards.png')
         .link-row
           a(:href='project.github')
             GithubIcon(class='link-icon')
@@ -103,6 +104,9 @@ export default {
     border-radius: 16px;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
     margin: 30px;
+    max-width: 729px;
+    width: 100%;
+    height: auto;
   }
 
   .link-row {

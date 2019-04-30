@@ -2,6 +2,9 @@
   Layout
     section.projects
       h1 Projects
+      p A collection of projects I have worked on. Click on any one to get more information and a link to the website/github for that project. There is propably more stuff on my 
+        a(href='https://github.com/ToxicJojo') Github
+        | .
       hr
       ul
         li(v-for="edge in $page.projects.edges" :key="edge.id")
