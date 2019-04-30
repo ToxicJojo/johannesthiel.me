@@ -66,6 +66,8 @@ nav {
   justify-content: space-between;
   padding: 0 30px;
 
+  //transition: background-color .5s;
+
   ul {
     list-style: none;
     display: flex;
