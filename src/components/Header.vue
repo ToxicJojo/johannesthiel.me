@@ -25,10 +25,10 @@ export default {
     }
   },
   mounted () {
-    const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+    const isDarkMode = document.querySelector('body').classList.contains('dark')
 
     if (isDarkMode) {
-      toggleDarkTheme()
+      this.toggleDarkTheme()
     }
   },
   methods: {
