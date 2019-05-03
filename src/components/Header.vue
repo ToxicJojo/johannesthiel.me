@@ -55,8 +55,8 @@ export default {
 <style lang="scss" scoped>
 
 .theme-icon {
-  width: 32px;
-  height: 32px;
+  width: 92px;
+  height: 92px;
   padding: 30px;
 }
 
