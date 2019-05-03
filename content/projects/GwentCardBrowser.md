@@ -1,6 +1,6 @@
 ---
 title: Gwent Card Browser
-image: /assets/gwent-cards.png
+image: gwent-cards.png
 description: A card browser for the witcher card game Gwent. Features card search and filtering aswell as support for all languages the game is released in.
 color: 2a77b1
 tech: [vue, cypress, travis]

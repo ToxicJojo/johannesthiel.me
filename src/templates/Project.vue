@@ -1,11 +1,9 @@
 <template lang='pug'>
   Layout
     section.project
-      //.header(:style='{backgroundColor: "#" + project.color}')
       .header(:style='{backgroundImage: backgroundGradient}')
         h1 {{ project.title }} 
-        //g-image(:src='project.image')
-        g-image(src='@/assets/gwent-cards.png')
+        g-image(:src='require(`@/assets/project-img/${project.image}`)')
         .link-row
           a(:href='project.github')
             GithubIcon(class='link-icon')
