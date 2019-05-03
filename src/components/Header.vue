@@ -1,7 +1,7 @@
 <template lang='pug'>
   nav
     g-link(to='/')
-      g-image(src='@/favicon.png' width='48px' height='48px')
+      g-image(src='@/favicon2.png' width='48px' height='48px')
     ul
       li
         g-link(to='/projects') Projects

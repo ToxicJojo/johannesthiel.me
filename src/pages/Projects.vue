@@ -47,6 +47,7 @@ export default {
 section {
   max-width: 1024px;
   margin: auto;
+  padding: 30px;
 }
 
 h1 {
@@ -56,13 +57,22 @@ h1 {
 ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
   padding: 0;
   margin: 30px 0px;
 
   li {
     display: flex;
-    flex-basis: 50%;
+    flex-basis: 100%;
+    flex-grow: 1;
+    margin: 30px 0;
+
+    @media (min-width: 800px) {
+      flex-basis: 40%;
+      margin: 30px;
+    }
+
   }
 }
 
