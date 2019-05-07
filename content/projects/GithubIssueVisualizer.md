@@ -1,6 +1,6 @@
 ---
 title: Github Issue Visualizer
-image: https://johannesthiel.me/img/issueVisualizer.png
+image: issue-visualizer.png
 description: Show Github Issues in a visual way. Allows filtering, coloring and many more customizations.
 tech: [vue, bulma]
 color: 7957d5

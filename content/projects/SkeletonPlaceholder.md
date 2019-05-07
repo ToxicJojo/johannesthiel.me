@@ -1,6 +1,6 @@
 ---
 title: Skeleton Placeholder
-image: https://johannesthiel.me/img/skeletonPlaceholder.png
+image: skeleton-placeholder.png
 description: A small CSS library to build skeleton placeholders. Provides different customization such as color, size or animations.
 tech: [vue, bulma]
 color: F6511D

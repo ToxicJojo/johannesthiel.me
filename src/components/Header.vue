@@ -1,7 +1,7 @@
 <template lang='pug'>
   nav
     g-link(to='/')
-      g-image(src='@/favicon.png' width='48px' height='48px')
+      g-image(src='@/favicon2.png' width='48px' height='48px')
     ul
       li
         g-link(to='/projects') Projects
@@ -25,10 +25,10 @@ export default {
     }
   },
   mounted () {
-    const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+    const isDarkMode = document.querySelector('body').classList.contains('dark')
 
     if (isDarkMode) {
-      toggleDarkTheme()
+      this.toggleDarkTheme()
     }
   },
   methods: {
@@ -55,8 +55,8 @@ export default {
 <style lang="scss" scoped>
 
 .theme-icon {
-  width: 32px;
-  height: 32px;
+  width: 92px;
+  height: 92px;
   padding: 30px;
 }
 
