@@ -22,11 +22,16 @@
   "homepage": "https://github.com/ToxicJojo/johannesthiel.me#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.8.3",
+    "@babel/core": "^7.4.5",
     "del": "^4.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0-beta.2",
     "gulp-clean-css": "^4.2.0",
     "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5"
+    "gulp-sourcemaps": "^2.6.5",
+    "rollup-stream": "^1.24.1",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
   }
 }
