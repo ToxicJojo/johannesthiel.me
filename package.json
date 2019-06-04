@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "eleventy": "eleventy",
     "build": "gulp buildProd",
     "build:dev": "gulp buildDev",
     "serve": "gulp serve"
