@@ -4,6 +4,9 @@ html(land='en')
     title Johannes Thiel - Frontend Web Developer
     meta(name='viewport' content='width=device-width,initial-scale=1')
     link(rel='stylesheet' href='/css/main.css')
+    link(href='https://fonts.googleapis.com/css?family=Merriweather|Source+Sans+Pro&display=swap' rel='stylesheet')
+    script.
+      ((localStorage.getItem('theme') === 'true') && document.documentElement.setAttribute('data-theme', 'dark'))
   body
     include includes/header.pug
 
