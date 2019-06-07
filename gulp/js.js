@@ -7,6 +7,7 @@ const buffer = require('vinyl-buffer')
 
 const scriptsConfig = {
   entry: './src/assets/scripts/main.js',
+  watchDir: './src/assets/scripts/**/*.js',
   dest: './dist/js',
 }
 
@@ -36,7 +37,7 @@ const jsDev = () => {
 }
 
 const jsWatch = (done) => {
-  watch(scriptsConfig.entry, jsDev)
+  watch(scriptsConfig.watchDir, jsDev)
   done()
 }
 
