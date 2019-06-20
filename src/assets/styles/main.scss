@@ -5,7 +5,10 @@
 @import 'base/base';
 @import 'base/typography';
 @import 'base/links';
+@import 'base/layout';
 
 @import 'components/header';
 @import 'components/hamburger';
 @import 'components/footer';
+@import 'components/project-card';
+@import 'components/project-row';

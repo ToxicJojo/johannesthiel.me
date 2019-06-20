@@ -1,0 +1,33 @@
+.project-list {
+  @include flex-col;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.project-card {
+  @include flex-col;
+  max-width: 350px;
+  margin: 32px 0;
+  border-radius: 16px;
+  overflow: hidden;
+  border: none;
+  color: var(--text-color);
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
+  cursor: pointer;
+}
+
+.project-card__image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.project-card__body {
+  padding: 32px;
+}
+
+.project-card__title {
+  margin: 0;
+}

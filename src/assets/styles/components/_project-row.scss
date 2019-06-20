@@ -1,0 +1,80 @@
+.project-heading {
+  text-align: center;
+  margin: 32px;
+}
+
+.project-list {
+  @include flex-col;
+  list-style: none;
+  margin: 0;
+  margin-bottom: -32px;
+  padding: 0;
+}
+
+.project-row {
+  @include flex-col;
+  align-items: center;
+  padding: 32px;
+  border-bottom: none;
+}
+
+.project-row__image {
+  max-width: 729px;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  margin: 32px;
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
+}
+
+
+.project-row__title {
+  color: #eee;
+  text-align: center;
+}
+
+.project-row__description {
+  color: #ddd;
+  max-width: 860px;
+  text-align: center;
+}
+
+.project-row__links {
+  @include flex-row;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.project-row__link {
+  padding: 16px;
+  margin: 32px;
+  max-width: 128px;
+  border-radius: 8px;
+  flex-grow: 1;
+  text-align: center;
+  color: #ddd;
+  border: 1px solid rgba(255, 255, 255, .5);
+  transition: all .25s;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, .2);
+  }
+}
+
+.project-row__tech-list {
+  @include flex-row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-row__tech {
+  margin: 16px;
+  padding: 8px 16px;
+  background-color: #ddd;
+  border-radius: 32px;
+  text-transform: capitalize;
+  font-weight: bold;
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
+}
