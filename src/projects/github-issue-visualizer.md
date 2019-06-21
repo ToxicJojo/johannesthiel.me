@@ -1,7 +1,7 @@
 ---
 tags: projects
 title: Github Issue Visualizer
-image: https://peaceful-ptolemy-cdf9e7.netlify.com/assets/img/issue-visualizer.d92b6f9e.png
+image: /assets/img/projects/issueVisualizer.png 
 description: Show Github Issues in a visual way. Allows filtering, coloring and many more customizations.
 tech: [vue, buefy, d3js]
 color: 7957d5

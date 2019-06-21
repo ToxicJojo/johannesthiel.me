@@ -1,7 +1,7 @@
 ---
 tags: projects
 title: Skeleton Placeholder
-image: https://peaceful-ptolemy-cdf9e7.netlify.com/assets/img/skeleton-placeholder.0fcab1d2.png
+image: /assets/img/projects/skeletonPlaceholder.png
 description: A small CSS library to build skeleton placeholders. Provides different customization such as color, size or animations.
 tech: [scss, pug]
 color: F6511D

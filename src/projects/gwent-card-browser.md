@@ -1,7 +1,7 @@
 ---
 tags: projects 
 title: Gwent Card Browser
-image: https://peaceful-ptolemy-cdf9e7.netlify.com/assets/img/gwent-cards.69987209.png
+image: /assets/img/projects/gwent-cards.png
 description: A card browser for the witcher card game Gwent. Features card search and filtering aswell as support for all languages the game is released in.
 color: 2a77b1
 gradient: linear-gradient(rgb(42, 119, 177), rgb(27, 104, 162))
