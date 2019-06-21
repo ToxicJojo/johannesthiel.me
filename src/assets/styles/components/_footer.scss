@@ -1,0 +1,18 @@
+.footer {
+  @include flex-row;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  font-size: 16px;
+  border-top: 1px solid var(--border-color);
+
+  a {
+    border: unset;
+    color: var(--text-color);
+    opacity: .6;
+  }
+}
+
+.footer__col {
+  @include flex-col;
+  margin: 32px;
+}
