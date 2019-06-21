@@ -6,6 +6,8 @@
   border-radius: 50px;
 
   &.hamburger--open {
+    position: fixed;
+    right: 48px;
     background-color: transparent;
     transform: rotate(180deg);
 
