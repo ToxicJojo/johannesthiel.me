@@ -1,5 +1,12 @@
-.project-heading {
+.project-section {
   text-align: center;
+
+  p {
+    margin: 32px;
+  }
+}
+
+.project-heading {
   margin: 32px;
 }
 
@@ -10,6 +17,7 @@
   list-style: none;
   margin: 0;
   margin-bottom: -32px;
+  margin-top: 32px;
   padding: 0;
 
   li {
@@ -31,7 +39,6 @@
   align-items: center;
   padding: 32px;
   border-bottom: none;
-  box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
 }
 
 .project-row__image {
