@@ -1,7 +1,7 @@
 ---
 tags: projects
 title: Skeleton Placeholder
-image: /assets/img/projects/skeletonPlaceholder.png
+image: /assets/img/projects/skeletonPlaceholder
 description: A small CSS library to build skeleton placeholders. Provides different customization such as color, size or animations.
 tech: [scss, pug]
 color: F6511D

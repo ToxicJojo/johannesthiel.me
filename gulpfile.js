@@ -7,7 +7,7 @@ const { webpConversion } = require('./gulp/img')
 const serve = require('./gulp/serve')
 
 module.exports = {
-  buildProd: series(clean, html, cssProd, jsProd),
+  buildProd: series(clean, html, cssProd, jsProd, webpConversion),
   buildDev: series(clean, html, cssDev, jsDev, webpConversion),
   serve: series(htmlWatch, cssWatch, jsWatch, serve),
 }
