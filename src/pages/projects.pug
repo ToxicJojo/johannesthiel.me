@@ -16,7 +16,11 @@ section.project-section
           ul.project-row__tech-list
             each tech in project.data.tech
               li.project-row__tech(style=`color: #${project.data.color}`)= tech
-          img(src=project.data.image alt=`Preview image for ${project.data.title}`).project-row__image
+          picture.project-row__image
+            source(srcset=`${project.data.image}.webp` type='image/webp')
+            source(srcset=`${project.data.image}.png` type='image/png')
+            img(src=`${project.data.image}.png` alt=`Preview image for ${project.data.title}`)
+
           p.project-row__description= project.data.description
           .project-row__links
             a.project-row__link(href=project.data.website) Website

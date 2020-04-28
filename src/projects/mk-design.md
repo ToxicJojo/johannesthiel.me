@@ -1,7 +1,7 @@
 ---
 tags: projects
 title: MkDesign
-image: /assets/img/projects/mkdesign.png
+image: /assets/img/projects/mkdesign
 description: A web app for mechanical keyboard enthusiats that allows you to design your own keyboard. Layouts, Colors, Fonts and more can be customized. Keyboards can be saved and shared with other people.
 tech: [vue, bulma]
 color: D18200
