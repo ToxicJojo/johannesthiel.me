@@ -7,8 +7,25 @@ dynamicPermalink: false
 section.container
   h1.hero__title Hi I'm Johannes
   p.hero__content
-   |I am a student at Heinrich-Heine University Düsseldorf currently working on my Master's degree in Computer Science. 
-   br
-   | I make websites and love playing with new frameworks/technologies. Check out things I worked on 
-   a(href='/projects' title='Projects I have worked on') here
-   | .
+    | I make websites and love playing with new frameworks/technologies.
+    br
+    | Here is a collection of projects I have worked on. There is more stuff including this website on my 
+    a(href='https://github.com/ToxicJojo') Github
+section.project-section
+  ul.project-list
+    each project in collections.projects
+      li
+        .project-row(style=`background-image: ${project.data.gradient}`)
+          h2.project-row__title= project.data.title
+          ul.project-row__tech-list
+            each tech in project.data.tech
+              li.project-row__tech(style=`color: #${project.data.color}`)= tech
+          picture.project-row__image
+            source(srcset=`${project.data.image}.webp` type='image/webp')
+            source(srcset=`${project.data.image}.png` type='image/png')
+            img(src=`${project.data.image}.png` alt=`Preview image for ${project.data.title}`)
+
+          p.project-row__description= project.data.description
+          .project-row__links
+            a.project-row__link(href=project.data.website) Website
+            a.project-row__link(href=project.data.github) Github
