@@ -14,12 +14,12 @@ section.container
 section.project-section
   ul.project-list
     each project in collections.projects
-      li
+      li(style=`order: ${project.data.order}`)
         .project-row(style=`background-image: ${project.data.gradient}`)
           h2.project-row__title= project.data.title
           ul.project-row__tech-list
             each tech in project.data.tech
-              li.project-row__tech(style=`color: #${project.data.color}; order=${project.data.order}`)= tech
+              li.project-row__tech(style=`color: #${project.data.color}`)= tech
           picture.project-row__image
             source(srcset=`${project.data.image}.webp` type='image/webp')
             source(srcset=`${project.data.image}.png` type='image/png')
