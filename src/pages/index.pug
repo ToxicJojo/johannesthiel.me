@@ -19,7 +19,7 @@ section.project-section
           h2.project-row__title= project.data.title
           ul.project-row__tech-list
             each tech in project.data.tech
-              li.project-row__tech(style=`color: #${project.data.color}`)= tech
+              li.project-row__tech(style=`color: #${project.data.color}; order=${project.data.order}`)= tech
           picture.project-row__image
             source(srcset=`${project.data.image}.webp` type='image/webp')
             source(srcset=`${project.data.image}.png` type='image/png')
