@@ -1,6 +1,7 @@
 ---
 tags: projects
 title: Github Issue Visualizer
+order: 1
 image: /assets/img/projects/issueVisualizer 
 description: Show Github Issues in a visual way. Allows filtering, coloring and many more customizations.
 tech: [vue, buefy, d3js]
